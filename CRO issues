@@ -1,0 +1,4 @@
+systemctl start mariadb.service
+
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('newpwd');
+
