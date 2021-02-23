@@ -1,4 +1,7 @@
 systemctl start mariadb.service
 
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('newpwd');
-
+ subscription-manager register
+ subscription-manager attach --auto
+ useradd  gama -d /home/gama -c "Man"
+   usermod -a -G wheel gam
