@@ -1,6 +1,14 @@
 systemctl start mariadb.service
 
-SET PASSWORD FOR 'root'@'localhost' = PASSWORD('newpwd');
+if no password the mysqladmin -u root password newpass
+
+if you login then SET PASSWORD FOR 'root'@'localhost' = PASSWORD('newpwd');
+
+if you wan tto change from command line mysqladmin -u root -p password newpass
+
+if yo uwant default passwd 
+The word 'password' in the above example is part of the command, do not replace that with your password. The word 'newpass' is the new password.
+
  subscription-manager register
  subscription-manager attach --auto
  useradd  gama -d /home/gama -c "Man"
